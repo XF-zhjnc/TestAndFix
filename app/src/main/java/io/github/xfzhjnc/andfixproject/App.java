@@ -13,6 +13,12 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        try {
+            AndFixManager.calculatedArtMethod(NativeArtMethodCalculator.class.getMethod("m1"),
+                    NativeArtMethodCalculator.class.getMethod("m2"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         startAndFix(this);
     }

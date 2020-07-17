@@ -8,6 +8,8 @@ public class AndFixManager {
         System.loadLibrary("native_lib");
     }
 
+    public static native void calculatedArtMethod(Method m1, Method m2);
+
     public static native void andFixMethod(Method srcMethod, Method dstMethod);
 
 }
