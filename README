@@ -1,0 +1,12 @@
+# AndFixProject
+
+Only verified Android 7.0
+
+### Create dex patch
+
+```bash
+{sdk_path}/build-tools/29.0.0/dx --dex --output=right.dex {the_path_with_right_classes}
+
+```
+
+copy to /src/main/assets
